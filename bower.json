@@ -1,0 +1,14 @@
+{
+  "name": "personal-website",
+  "version": "0.0.1",
+  "homepage": "https://github.com/higgintop/personal-website",
+  "authors": [
+    "Allison Higginbotham <higgintop@gmail.com>"
+  ],
+  "description": "This is my personal website using grunt and Bootstrap",
+  "main": "public/index.html",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}

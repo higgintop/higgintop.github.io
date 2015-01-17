@@ -1,0 +1,47 @@
+doctype html
+html(lang="en-US")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title My Title
+    link(rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css")
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet'>
+    link(rel="stylesheet" href="css/main.css")
+
+  body
+    .container-fluid
+      nav.navbar.navbar-inverse
+        div.navbar-header
+          button(type="button" data-target="navbarCollapse" data-toggle="collapse" class="navbar-toggle")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href="#" class="navbar-brand") Allison Higginbotham
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        div.collapse.navbar-collapse#navbarCollapse
+          ul.nav.navbar-nav
+            li.active
+              a(href="#") About
+            li
+              a(href="#") Work
+            li
+              a(href="#") Contact
+      .block-one
+        img(src="/img/allison.jpg")
+        h1 Allison Higginbotham
+           
+
+
+
+
+  
+  
+
+
+
+      
+      
+
+    script(src="js/main.js")
