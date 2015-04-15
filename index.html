@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <head>
-  <script src="//use.edgefonts.net/dynalight;damion.js"></script>
+  <script src="//use.edgefonts.net/dynalight;damion.js"></script><link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <div class="module parallax parallax-1">
-    <div class="content-container"><img src="../img/allison.jpg">
-      <h1>Allison Higginbotham</h1>
-      <h2>I'm a full stack developer located in Nashville, TN</h2>
-      <div class="arrow-down bounce"><a href="#about"></a></div>
+    <div class="content-container">
+      <h1 class="first-name">Allison </h1>
+      <h1 class="last-name">Higginbotham</h1>
+      <h2 class="first-header">software developer </h2>
+      <h2 class="second-header">Nashville, TN</h2>
     </div>
   </div>
-  <div id="about" class="module content content-section-1 row">
-    <div class="content-container-left col-md-6">
-      <div class="about-logo"></div>
+  <div class="module content">
+    <div class="content-container-resume">
+      <section id="timeline">
+        <div class="timeline-block">
+          <div class="timeline-img"><img src="/img/bullet.svg"></div>
+          <div class="timeline-content">
+            <h2>FIRST</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p><span class="date">1</span>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-img"><img src="/img/bullet.svg"></div>
+          <div class="timeline-content">
+            <h2>SECOND</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p><span class="date">2</span>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-img"><img src="/img/bullet.svg"></div>
+          <div class="timeline-content">
+            <h2>THIRD</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p><span class="date">3</span>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-img"><img src="/img/bullet.svg"></div>
+          <div class="timeline-content">
+            <h2>FOURTH</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p><span class="date">4</span>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="content-container-right col-md-6">
-      <div class="about-text">
-        <h2>About</h2>
-        <p>My name is Allison Higginbotham.</p>
-        <p>I truly believe that user interfaces need to be designed with rhythm and flow. I create those interfaces holistically by looking through my Interaction Design, Visual Design and Motion Design lenses. I believe that creating meaningful interactions is no longer a static set of screens, but requires motion to explain the UI’s behaviour, while making the user’s time more pleasurable. The beauty of motion is that it mimics physicality while it keeps the flexibility of the digital world.</p>
-      </div>
-    </div>
-  </div>
-  <div class="content-container-center">
-    <div class="experience">
-      <h2>how i do stuff</h2>
+    <div class="content-container-portfolio">
+      <h2>Recent Projects</h2>
+      <p>The following are links to some of the front-end projects I've worked on over the past three months.</p><a href="#0" target="_blank" class="portfolioLink"> <img src="/img/screenshotHolder.png"></a><a href="#0" target="_blank" class="portfolioLink"> <img src="/img/screenshotHolder.png"></a><a href="#0" target="_blank" class="portfolioLink"> <img src="/img/screenshotHolder.png"></a>
     </div>
   </div>
   <div class="module parallax parallax-2">
-    <div class="content-container-examples-parallax">
-      <h2>Examples</h2>
+    <div class="content-container">
+      <h2>Contact</h2>
+      <p>higgintop@gmail.com</p>
+      <p>865-806-6804</p>
     </div>
   </div>
   <div class="module content">
-    <div class="content-container-examples">
-      <h2>Content 2</h2>
-      <p>Here is some text for the 2nd content block</p>
+    <div class="content-container-footer">
+      <ul>
+        <li class="btn-github"><a href="https://github.com/higgintop/" target="_blank" class="fa fa-github fa-3x"></a></li>
+        <li class="linkedin"><a href="http://www.linkedin.com/pub/allison-higginbotham/94/14a/248/en" target="_blank" class="fa fa-linkedin fa-3x"></a></li>
+        <li class="codepen"><a href="http://codepen.io/higgintop/" target="_blank" class="fa fa-codepen fa-3x"></a></li>
+      </ul>
     </div>
   </div>
-  <div class="module parallax parallax-3">
-    <div class="content-container">
-      <h1>Calm</h1>
-    </div>
-  </div>
-  <div class="module content">
-    <div class="content-container">
-      <h2>Content 3</h2>
-      <p>Here is some text for the 3rd content block</p>
-    </div>
-  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
