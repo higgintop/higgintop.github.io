@@ -12,7 +12,7 @@ class NavigationButton extends Component {
     return (
       <div>
         <button
-          onClick={onClick}
+          onClick={() => this.props.onButtonSelect(this.props.label)}
           className={isSelected ? "highlighted-btn" : ""}>
             {label}
         </button>

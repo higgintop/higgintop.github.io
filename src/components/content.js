@@ -18,6 +18,16 @@ class Content extends Component {
   // define a method/function on a class
   // always update state with 'this.setState'
   render () {
+    switch (this.props.selectedButton) {
+        case "home":
+            return <h3>Home page content</h3>
+        case "work":
+            return <h3>Work content</h3>
+        case "about":
+            return <h3>About content</h3>
+        case "contact":
+            return <h3>Contact content</h3>
+    }
     return (
       <div className="content-container">
         <h3>Some content</h3>

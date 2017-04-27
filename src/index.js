@@ -7,13 +7,21 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      selectedButton: "home"
+    };
   }
 
   render () {
+    console.log("STATE", this.state)
     return (
       <div className="main-container">
-        <Navigation />
-        <Content />
+        <Navigation
+          selectedButton={this.state.selectedButton}
+          onButtonSelect={(selectedButton) => this.setState({selectedButton})} />
+        <Content
+          selectedButton={this.state.selectedButton} />
       </div>
     );
   }

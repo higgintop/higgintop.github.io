@@ -9,37 +9,38 @@ class Navigation extends Component {
   constructor(props) {
     super(props);
 
-    // initialize state for very first time
-    this.state = {
-      selectedButton: "home"
-    };
+    // // initialize state for very first time
+    // this.state = {
+    //   selectedButton: "home"
+    // };
   }
 
 
   // define a method/function on a class
   // always update state with 'this.setState'
   render () {
+    console.log("PROPS", this.props);
     return (
       <div className="navigation">
         <NavigationButton
           label="home"
-          isSelected={this.state.selectedButton === "home"}
-          onClick={() => this.handleClick("home")}
+          isSelected={this.props.selectedButton === "home"}
+          onButtonSelect={this.props.onButtonSelect}
         />
         <NavigationButton
           label="work"
-          isSelected={this.state.selectedButton === "work"}
-          onClick={() => this.handleClick("work")}
+          isSelected={this.props.selectedButton === "work"}
+          onButtonSelect={this.props.onButtonSelect}
         />
         <NavigationButton
           label="about"
-          isSelected={this.state.selectedButton === "about"}
-          onClick={() => this.handleClick("about")}
+          isSelected={this.props.selectedButton === "about"}
+          onButtonSelect={this.props.onButtonSelect}
         />
         <NavigationButton
           label="contact"
-          isSelected={this.state.selectedButton === "contact"}
-          onClick={() => this.handleClick("contact")}
+          isSelected={this.props.selectedButton === "contact"}
+          onButtonSelect={this.props.onButtonSelect}
         />
       </div>
     );
